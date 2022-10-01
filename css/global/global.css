@@ -20,10 +20,19 @@ img{
   max-width: 100%;
   display: block;
   object-fit: cover;
-  
-}
-img [src$=".jpg"] {
+  object-position: left;
   border-radius: 4px;
 }
 
+span{
+  display: inline-block;
+}
+
+img [src$=".jpg"] {
+  border-radius: 4px;
+}
 /* CSS RESET */
+
+*{
+  border: 1px solid gray;
+}
