@@ -47,6 +47,10 @@
   font: 600 2rem/1.25 "Poppins", sans-serif;
 }
 
+.font-3-xxl{
+  font: 400 2.5rem/1.33 "Source Serif Pro", serif;
+}
+
 .font-2-xl {
   font: 500 2rem/1.25 "Roboto", sans-serif;
 }

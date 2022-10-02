@@ -13,11 +13,19 @@
   display: inline-block;
   color: var(--p5);
   padding: 16px 32px;
-  background: linear-gradient( #FFC800, #F2A60D);
+  background: var(--pgrad);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-transform: uppercase;
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
+  max-width: max-content;
+}
+.botao.secundario{
+  background: var(--c13rad);
+  color: var(--c2);
+}
+.botao.secundario:hover{
+  background: var(--c8);
 }
 .botao:hover{
   background: linear-gradient(#ffb60c, #e59311);
@@ -30,6 +38,8 @@
 }
 /* BOTAO */
 
+
+/* LINK */
 .link{
   display: inline-block;
   color: var(--p1);
@@ -48,3 +58,4 @@
 .link:hover{
   color: var(--c1);
 }
+/* LINK */

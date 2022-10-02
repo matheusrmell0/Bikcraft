@@ -1,43 +1,43 @@
-.cor-0{
+.cor-0 {
   color: var(--w);
 }
-.cor-1{
+.cor-1 {
   color: var(--c1);
 }
-.cor-2{
+.cor-2 {
   color: var(--c2);
 }
-.cor-3{
+.cor-3 {
   color: var(--c3);
 }
-.cor-4{
+.cor-4 {
   color: var(--c4);
 }
-.cor-5{
+.cor-5 {
   color: var(--c5);
 }
-.cor-6{
+.cor-6 {
   color: var(--c6);
 }
-.cor-7{
+.cor-7 {
   color: var(--c7);
 }
-.cor-8{
+.cor-8 {
   color: var(--c8);
 }
-.cor-9{
+.cor-9 {
   color: var(--c9);
 }
-.cor-10{
+.cor-10 {
   color: var(--c10);
 }
-.cor-11{
+.cor-11 {
   color: var(--c11);
 }
-.cor-12{
+.cor-12 {
   color: var(--c12);
 }
-:root{
+:root {
   --w: #ffffff;
   --c1: #f7f7f7;
   --c2: #e0e0e0;
@@ -51,6 +51,7 @@
   --c10: #212121;
   --c11: #141414;
   --c12: #000000;
+  --c13rad: linear-gradient(180deg, #606060 0%, #474747 100%);
 
   /* BACKGROUND */
   --bg0: white;
@@ -59,32 +60,34 @@
   --bg3: #212121;
   --bg4: #141414;
   --bg5: #000000;
+  --bg6: #ffbb00;
 }
-
 
 /* PRIMARIA */
-.cor-p1{
+.cor-p1 {
   color: var(--p1);
 }
-.cor-p2{
+.cor-p2 {
   color: var(--p2);
 }
-.cor-p3{
+.cor-p3 {
   color: var(--p3);
 }
-.cor-p4{
+.cor-p4 {
   color: var(--p4);
 }
-.cor-p5{
+.cor-p5 {
   color: var(--p5);
 }
+.pgrad {
+  color: var(--pgrad);
+}
 
-:root{
+:root {
   --p1: #ffbb00;
   --p2: #e7a50c;
   --p3: #a66f00;
   --p4: #714a03;
   --p5: #331f01;
-  --pgrad: linear-gradient( #FFC800, #F2A60D);
+  --pgrad: linear-gradient(#ffc800, #f2a60d);
 }
-
