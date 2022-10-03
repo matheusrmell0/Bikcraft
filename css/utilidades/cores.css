@@ -62,6 +62,7 @@
   --bg4-2: #111111;
   --bg5: #000000;
   --bg6: #ffbb00;
+  --bgc7: #606060;
 }
 
 /* PRIMARIA */
@@ -85,10 +86,11 @@
 }
 
 :root {
+  --p0: #FFD86F;
   --p1: #ffbb00;
   --p2: #e7a50c;
   --p3: #a66f00;
   --p4: #714a03;
   --p5: #331f01;
-  --pgrad: linear-gradient( #FFC800, #F2A60D);
+  --pgrad: linear-gradient(#ffc800, #f2a60d);
 }
