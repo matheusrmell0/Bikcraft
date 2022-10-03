@@ -35,6 +35,11 @@
 .footer-redes {
   display: flex;
   gap: 32px;
+  transition: .3s;
+}
+
+.footer-redes img:hover{
+  width: 31px;
 }
 
 .footer a:hover{

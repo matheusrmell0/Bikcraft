@@ -59,6 +59,7 @@
   --bg2: #272727;
   --bg3: #212121;
   --bg4: #141414;
+  --bg4-2: #111111;
   --bg5: #000000;
   --bg6: #ffbb00;
 }
@@ -89,5 +90,5 @@
   --p3: #a66f00;
   --p4: #714a03;
   --p5: #331f01;
-  --pgrad: linear-gradient(#ffc800, #f2a60d);
+  --pgrad: linear-gradient( #FFC800, #F2A60D);
 }
