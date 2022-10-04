@@ -34,6 +34,6 @@ img [src$=".jpg"] {
 }
 /* CSS RESET */
 
-*{
+/* *{
   border: 1px solid gray;
-}
+} */

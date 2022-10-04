@@ -1,15 +1,13 @@
 .vantagens-bg {
   background-color: var(--bgc7);
   --padding: 120px;
-}
-
-.vantagens {
   padding-top: var(--padding);
   padding-bottom: var(--padding);
 }
 
+
 .vantagens h2{
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .vantagens ul{
