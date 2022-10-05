@@ -32,6 +32,11 @@ span{
 img [src$=".jpg"] {
   border-radius: 4px;
 }
+
+button{
+  outline: none;
+  border: none;
+}
 /* CSS RESET */
 
 /* *{

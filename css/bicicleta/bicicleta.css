@@ -107,6 +107,11 @@
   transition: 0.3s;
 }
 
+#escolha-a-sua{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 800px) {
   .bicicleta {

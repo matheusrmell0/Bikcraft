@@ -1,0 +1,63 @@
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form label {
+  display: block;
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  color: var(--c10);
+  margin-bottom: 4px;
+}
+
+.form label:hover {
+  color: var(--c12);
+}
+
+.form input[type="text"],
+input[type="email"],
+textarea {
+  background-color: var(--bgc1);
+  border-radius: 4px;
+  border: 1px solid var(--c2);
+  padding: 12px 15px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--p1);
+  background: var(--w);
+  box-shadow: 0 0 0 2px #fea;
+  transition: 0.5s;
+}
+
+.form input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  box-shadow: 0 0 0 0.5px #fea;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.contato-formulario > .form div:nth-child(3),
+.contato-formulario > .form div:nth-child(4),
+.contato-formulario > .form button {
+  grid-column: span 2;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+  .contato-formulario > .form div:nth-child(1),
+  .contato-formulario > .form div:nth-child(2){
+    grid-column: span 2;
+  }
+}
