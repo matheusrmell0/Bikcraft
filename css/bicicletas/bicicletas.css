@@ -73,6 +73,11 @@
   margin-bottom: 16px;
 }
 
+.bicicletas-conteudo h2:hover::before{
+  transform: rotate(180deg);
+  transition: .8s;
+}
+
 .bicicletas-conteudo p {
   margin-bottom: 32px;
   width: 52ch;

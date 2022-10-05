@@ -102,3 +102,19 @@
     margin-bottom: 8px;
   }
 }
+
+@media (max-width: 600px) {
+  .contato {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+  .contato-conteudo,
+  .contato-formulario {
+    padding: 40px;
+    margin-top: 12px;
+    margin: 0px;
+  }
+  .contato-formulario{
+    padding: 20px;
+  }
+}
