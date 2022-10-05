@@ -17,6 +17,8 @@
 
 .form input[type="text"],
 input[type="email"],
+input[type="number"],
+input[type="checkbox"],
 textarea {
   background-color: var(--bgc1);
   border-radius: 4px;
@@ -29,7 +31,9 @@ textarea {
 
 .form input[type="text"]:focus,
 input[type="email"]:focus,
-textarea:focus {
+textarea:focus,
+input[type="number"]:focus,
+input[type="checkbox"]:focus {
   outline: none;
   border-color: var(--p1);
   background: var(--w);
@@ -39,7 +43,9 @@ textarea:focus {
 
 .form input[type="text"]:hover,
 input[type="email"]:hover,
-textarea:hover {
+textarea:hover,
+input[type="number"]:hover,
+input[type="checkbox"]:hover {
   box-shadow: 0 0 0 0.5px #fea;
   transition: 0.5s;
   cursor: pointer;
@@ -51,13 +57,45 @@ textarea:hover {
   grid-column: span 2;
 }
 
+.form .checkbox label,
+.form .checkbox input {
+  margin: 0px;
+}
+
+.form .checkbox {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 12px;
+  align-items: center;
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
+
+.form .checkbox a {
+  text-decoration: underline;
+}
+
+.form .checkbox a:hover {
+  font-weight: 700;
+  color: var(--c12);
+  transition: 0.3s;
+}
+
+.form .checkbox input {
+  height: 28px;
+  width: 28px;
+  background-color: var(--bgc1);
+  border: 1px solid var(c1);
+  border-radius: 5px;
+}
+
 /* RESPONSIVO */
 @media (max-width: 600px) {
   .form {
     grid-template-columns: 1fr;
   }
   .contato-formulario > .form div:nth-child(1),
-  .contato-formulario > .form div:nth-child(2){
+  .contato-formulario > .form div:nth-child(2) {
     grid-column: span 2;
   }
 }
