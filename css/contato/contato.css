@@ -17,14 +17,15 @@
 
 .contato-conteudo {
   border-radius: 5px 0 0 5px;
-  background-color: var(--bg5);
+  background: var(--bg5) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
   margin: 0px;
 }
 
 .contato-formulario {
   margin: 0px;
   border-radius: 0 5px 5px 0;
-  background-color: var(--bg0);
+  background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+  margin: 0px;;
 }
 
 .contato-conteudo h2 {
@@ -88,6 +89,7 @@
   }
   .contato-conteudo {
     border-radius: 5px 5px 0 0;
+    background: var(--c12);
   }
   .contato-formulario {
     border-radius: 0 0 5px 5px;
@@ -117,4 +119,7 @@
   .contato-formulario{
     padding: 20px;
   }
+}
+@media(max-width:400px){
+  .contato-formulario { background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 10px right 10px;}
 }

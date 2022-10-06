@@ -53,6 +53,12 @@
     font-size: 1rem;
   }
 }
+@media (max-width: 400px) {
+  .botao {
+    padding: 10px 14px;
+    font-size: 0.9rem;
+  }
+}
 /* BOTAO */
 
 /* LINK */
@@ -81,6 +87,10 @@
   background-color: var(--bg4);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.titulo{
+  background: url("../../img/dec/top-right.svg") no-repeat top right 20px;
 }
 
 .titulo p {
