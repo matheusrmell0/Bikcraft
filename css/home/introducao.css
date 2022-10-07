@@ -46,11 +46,17 @@
   .introducao img {
     height: 300px;
     width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 @media (max-width: 400px) {
   .introducao-bg {
-    background: var(--bg4) url("../../img/dec/bottom-right.svg") no-repeat right 50px top 285px;
+    background: var(--bg4) url("../../img/dec/bottom-right.svg") no-repeat right
+      50px top 285px;
+  }
+  .introducao img {
+    height: 200px;
   }
 }
 /* RESPONSIVO MAIN*/
