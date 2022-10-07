@@ -1,5 +1,5 @@
 .seguros-bg {
-  background-color: var(--bg4);
+  background: var(--bg4);
 }
 
 .seguros {
@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-#seguros .seguros{
+#seguros .seguros {
   padding-top: 0px;
 }
 
@@ -70,10 +70,14 @@
   transition: 0.3s;
 }
 
-
 @media (max-width: 800px) {
   .seguros {
     grid-template-columns: 1fr;
     padding-top: 60px;
+  }
+}
+@media (max-width: 400px) {
+  .seguros-bg {
+    background: var(--bg4) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 30px;
   }
 }

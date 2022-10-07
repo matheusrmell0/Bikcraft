@@ -1,10 +1,20 @@
 .vantagens-bg {
-  background-color: var(--bgc7);
+  background: var(--bgc7) url("../../img/dec/bottom-left.svg") no-repeat bottom 40px left 40px;
   --padding: 120px;
   padding-top: var(--padding);
   padding-bottom: var(--padding);
+  position: relative;
 }
 
+.vantagens-bg::before{
+  position: absolute;
+  content: "";
+  background-image: url("../../img/dec/top-left.svg");
+  width: 52px;
+  height: 52px;
+  top: 40px;
+  left: 40px;
+}
 
 .vantagens h2{
   margin-bottom: 80px;
@@ -28,11 +38,15 @@
 @media (max-width:800px){
   .vantagens-bg{
     --padding: 60px;
+    background: var(--bgc7);
   }
   .vantagens h2{
     margin-bottom: 40px;
   }
   .vantagens ul{
     gap: 20px;
+  }
+  .vantagens-bg::before{
+  display:none
   }
 }

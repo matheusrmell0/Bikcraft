@@ -17,14 +17,14 @@
 
 .contato-conteudo {
   border-radius: 5px 0 0 5px;
-  background: var(--bg5) url("../../img/dec/bottom-left.svg") no-repeat bottom 20px left 20px;
+  background: var(--bg5) url("../../img/dec/bottom-left.svg") no-repeat bottom 28px left 28px;
   margin: 0px;
 }
 
 .contato-formulario {
   margin: 0px;
   border-radius: 0 5px 5px 0;
-  background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 20px right 20px;
+  background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 28px right 28px;
   margin: 0px;;
 }
 
@@ -70,6 +70,7 @@
 
 .contato-rede {
   padding-left: 28px;
+  margin-bottom: 80px;
   display: flex;
   gap: 32px;
   width: fit-content;
@@ -121,5 +122,5 @@
   }
 }
 @media(max-width:400px){
-  .contato-formulario { background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 10px right 10px;}
+  .contato-formulario { background: var(--bg0) url("../../img/dec/bottom-right.svg") no-repeat bottom 14px right 28px;}
 }

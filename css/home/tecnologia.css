@@ -1,12 +1,23 @@
 .tecnologia-bg {
-  background-color: var(--bg4);
+  background: var(--bg4) url("../../img/dec/bottom-left.svg") no-repeat bottom 110px left 20px;
   box-shadow: inset 0 80px var(--bg0), inset 0 -80px var(--bg0);
+  position: relative;
 }
 
 .tecnologia {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
+}
+
+.tecnologia-bg::before{
+  content: "";
+  position: absolute;
+  background-image: url("../../img/dec/top-left.svg");
+  width: 52px;
+  height: 52px;
+  left: 20px;
+  top: 110px;
 }
 
 .tecnologia-imagem img {
@@ -60,6 +71,14 @@
 }
 
 /* RESPONSIVO */
+@media (max-width: 1360px){
+  .tecnologia-bg {
+    background: var(--bg4);
+  }
+  .tecnologia-bg::before{
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .tecnologia-bg {
     box-shadow: initial;

@@ -1,6 +1,6 @@
 /* HEADER */
 .header-bg {
-  background-color: var(--bg5);
+  background: var(--bg5);
 }
 .header {
   display: flex;

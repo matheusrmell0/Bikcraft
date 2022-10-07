@@ -19,6 +19,7 @@
 input[type="email"],
 input[type="number"],
 input[type="checkbox"],
+select,
 textarea {
   background-color: var(--bgc1);
   border-radius: 4px;
@@ -29,10 +30,15 @@ textarea {
   box-sizing: border-box;
 }
 
+select{
+  font-size: 1.2rem;
+}
+
 .form input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus,
 input[type="number"]:focus,
+select:focus,
 input[type="checkbox"]:focus {
   outline: none;
   border-color: var(--p1);
@@ -45,7 +51,8 @@ input[type="checkbox"]:focus {
 input[type="email"]:hover,
 textarea:hover,
 input[type="number"]:hover,
-input[type="checkbox"]:hover {
+input[type="checkbox"]:hover,
+select:hover {
   box-shadow: 0 0 0 0.5px #fea;
   transition: 0.5s;
   cursor: pointer;

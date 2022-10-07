@@ -107,6 +107,10 @@
   .bicicletas-bg:nth-child(odd) {
     background: var(--c11);
   }
+  .up{
+    text-transform: uppercase;
+
+  }
   .bicicletas {
     grid-template-columns: 1fr;
     gap: 20px;

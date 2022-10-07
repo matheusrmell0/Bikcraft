@@ -1,5 +1,6 @@
 .footer-bg {
-  background-color: var(--bg5);
+  background: var(--bg5) url("../../img/dec/top-right.svg") no-repeat top 40px
+    right 40px;
 }
 
 .footer {
@@ -35,38 +36,48 @@
 .footer-redes {
   display: flex;
   gap: 32px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.footer-redes img:hover{
+.footer-redes img:hover {
   width: 31px;
 }
 
-.footer a:hover{
+.footer a:hover {
   color: var(--c1);
 }
 
-.footer-copy{
+.footer-copy {
   grid-column: 1/-1;
   margin-top: 80px;
 }
 
 /* RESPONSIVO */
-@media(max-width:800px){
-  .footer > img{
-    display: none;
-  }
-  .footer{
-    grid-template-columns: 1fr 1fr;
+@media (max-width: 1360px) {
+  .footer-bg {
+    background: var(--bg5);
   }
 }
 
-@media(max-width:600px){
-  .footer{
+@media (max-width: 800px) {
+  .footer > img {
+    display: none;
+  }
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-bg {
+    background: var(--bg5) url("../../img/dec/top-right.svg") no-repeat top 40px
+      right 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
     grid-template-columns: 1fr;
     gap: 60px;
   }
-  .footer-copy{
+  .footer-copy {
     margin-top: 0px;
   }
 }

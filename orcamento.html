@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&family=Source+Serif+Pro:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <title>Orçamento | Bikcraft</title>
   <meta name="description" content="Faça já seu orçamento, respostas em até 24h">
@@ -17,7 +18,7 @@
 <body id="orcamento">
   <header class="header-bg">
     <div class="container header">
-      <a href="./"><img src="./img/bikcraft.svg" alt="Bikcraft"></a>
+      <a href="./"><img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft"></a>
       <nav aria-label="primaria">
         <ul class="header-menu font-1-m cor-0">
           <li><a href="./bicicletas.html">Bicicletas</a></li>
@@ -53,36 +54,36 @@
           <label for="nimbus">Nimbus Stark <span>R$ 4499</span></label>
           <div class="orcamento-detalhes">
             <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">50 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
             </ul>
-            <img src="./img/bicicletas/nimbus.jpg" alt="Nimbus Stark">
+            <img src="./img/bicicletas/nimbus.jpg" width="1120" height="700" alt="Nimbus Stark">
           </div>
 
           <input type="radio" name="produto" value="magic" id="magic">
           <label for="magic">Magic Might <span>R$ 2499</span></label>
           <div class="orcamento-detalhes">
             <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">40 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
             </ul>
-            <img src="./img/bicicletas/magic.jpg" alt="Magic Might">
+            <img src="./img/bicicletas/magic.jpg" width="1120" height="700" alt="Magic Might">
           </div>
 
           <input type="radio" name="produto" value="nebula" id="nebula">
           <label for="nebula">Nebula Cosmic <span>R$ 3999</span></label>
           <div class="orcamento-detalhes">
             <ul class="font-1-xs cor-8">
-              <li><img src="./img/icones/eletrica.svg" alt="">Motor Elétrico</li>
-              <li><img src="./img/icones/carbono.svg" alt="">Fibra de Carbono</li>
-              <li><img src="./img/icones/velocidade.svg" alt="">45 km/h</li>
-              <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
+              <li><img src="./img/icones/eletrica.svg" width="32" height="32" alt="">Motor Elétrico</li>
+              <li><img src="./img/icones/carbono.svg" width="32" height="32" alt="">Fibra de Carbono</li>
+              <li><img src="./img/icones/velocidade.svg" width="32" height="32" alt="">45 km/h</li>
+              <li><img src="./img/icones/rastreador.svg" width="32" height="32" alt="">Rastreador</li>
             </ul>
-            <img src="./img/bicicletas/nebula.jpg" alt="Nebula Cosmic">
+            <img src="./img/bicicletas/nebula.jpg" width="1120" height="700" alt="Nebula Cosmic">
           </div>
         </div>
 
@@ -138,7 +139,35 @@
         </div>
         <div>
           <label for="estado">Estado</label>
-          <input type="text" id="estado" name="estado" required>
+          <select name="estado" id="estado">
+            <option></option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas"> Alagoas</option>
+            <option value="Amapá">Amapá</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceara">Ceara</option>
+            <option value="Distrito_Federal">Distrito Federal</option>
+            <option value="Espírito_Santo">Espírito Santo</option>
+            <option value="Goiás">Goiás</option>
+            <option value="Maranhão">Maranhão</option>
+            <option value="Mato_Grosso">Mato Grosso</option>
+            <option value="Mato_Grosso_do_Sul">Mato Grosso do Sul</option>
+            <option value="Minas_Gerais">Minas Gerais</option>
+            <option value="Pará">Pará</option>
+            <option value="Paraíba">Paraíba</option>
+            <option value="Paraná">Paraná</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piauí">Piauí</option>
+            <option value="Rio_de_Janeiro">Rio de Janeiro</option>
+            <option value="Rio_Grande_do_Norte">Rio Grande do Norte</option>
+            <option value="Rio_Grande_do_Sul">Rio Grande do Sul</option>
+            <option value="Rondônia">Rondônia</option>
+            <option value="Santa_Catarina">Santa Catarina</option>
+            <option value="São_Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantins</option>
+          </select required>
         </div>
 
         <div class="checkbox font-1-s cor-11">
@@ -146,13 +175,13 @@
           <label for="termos">Li e aceito os <a href="./termos.html">termos e condições.</a></label>
         </div>
         <button class="botao col-2">solicitar orçamento</button>
-    </div>
+      </div>
     </form>
   </main>
 
   <footer class="footer-bg">
     <div class="footer container">
-      <img src="./img/bikcraft.svg" alt="Bikcraft">
+      <img src="./img/bikcraft.svg" width="136" height="32" alt="Bikcraft">
       <div class="footer-contato">
         <h3 class="font-2-l-b cor-1">Contato</h3>
         <ul class="cor-4 font-2-m">
@@ -163,13 +192,13 @@
         </ul>
         <div class="footer-redes">
           <a href="./">
-            <img src="./img/redes/instagram.svg" alt="Instagram">
+            <img src="./img/redes/instagram.svg" width="32" height="32" alt="Instagram">
           </a>
           <a href="./">
-            <img src="./img/redes/youtube.svg" alt="Youtube">
+            <img src="./img/redes/youtube.svg" width="32" height="32" alt="Youtube">
           </a>
           <a href="./">
-            <img src="./img/redes/facebook.svg" alt="Facebook">
+            <img src="./img/redes/facebook.svg" width="32" height="32" alt="Facebook">
           </a>
         </div>
       </div>
