@@ -4,7 +4,7 @@
 }
 
 .parceiros h2{
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .parceiros ul{
@@ -43,7 +43,7 @@
     padding: 20px;
   }
   .parceiros h2{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
   .parceiros ul{
     grid-template-columns: repeat(2, 1fr);

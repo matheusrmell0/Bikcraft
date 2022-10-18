@@ -13,6 +13,7 @@
   <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
   <title>Bikcraft - Bicicletas Elétricas</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <script>document.documentElement.classList.add('js');</script>
 </head>
 
@@ -45,8 +46,8 @@
   </main>
 
   <article class="bicicletas-lista">
-    <h2 class="container font-1-xxl cor-11">escolha a sua<span class="cor-p1">.</span></h2>
-    <ul>
+    <h2 class="container font-1-xxl cor-11 fadeInLeft" data-anime="900">escolha a sua<span class="cor-p1">.</span></h2>
+    <ul class="ul-bike opacity-0">
       <li>
         <a href="./bicicletas/magic.html">
           <img src="/img/bicicletas/magic-home.jpg" width="920" height="1040" alt="Dark Bike">
@@ -91,14 +92,14 @@
           </div>
         </div>
       </div>
-      <div class="tecnologia-imagem">
+      <div class="tecnologia-imagem opacity-0">
         <img src="./img/fotos/tecnologia.jpg" width="1400" height="2240" alt="">
       </div>
     </div>
   </article>
 
   <section class="parceiros" aria-label="Nossos parceiros">
-    <h2 class="container font-1-xxl cor-11">nossos parceiros<span class="cor-p1">.</span></h2>
+    <h2 class="container font-1-xxl cor-11 opacity-0">nossos parceiros<span class="cor-p1">.</span></h2>
 
     <ul>
       <li><img src="./img/parceiros/caravan.svg" width="145" height="38" alt="caravan"></li>
@@ -126,8 +127,8 @@
 
   <article class="seguros-bg">
     <div class="seguros container">
-      <h2 class="container font-1-xxl cor-0">seguros<span class="cor-p1">.</span></h2>
-      <div class="seguros-items">
+      <h2 id="seguros-index" class="container font-1-xxl cor-0 opacity-0">seguros<span class="cor-p1">.</span></h2>
+      <div id="seguros-items-prataid" class="seguros-items opacity-0">
         <h3 class="font-1-xl cor-3">PRATA</h3>
         <span class="font-1-xl cor-0">R$ 199 <span class="font-1-s cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">
@@ -138,7 +139,7 @@
         </ul>
         <a class="botao secundario" href="./orcamento.html?tipo=seguro&produto=prata">inscreva-se</a>
       </div>
-      <div id="seguros-items-ouroid" class="seguros-items">
+      <div id="seguros-items-ouroid" class="seguros-items opacity-0">
         <h3 class="font-1-xl cor-p1">OURO</h3>
         <span class="font-1-xl cor-0">R$ 299 <span class="font-1-s cor-6">mensal</span></span>
         <ul class="font-2-m cor-0">

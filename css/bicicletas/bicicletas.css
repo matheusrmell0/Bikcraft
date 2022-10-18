@@ -10,6 +10,11 @@
   margin-top: 60px;
 }
 
+#bicicletas-magic{
+  border: solid red 1px;
+  margin-bottom: 20px;
+}
+
 .bicicletas {
   display: grid;
   grid-template-columns: 1fr 1fr;
