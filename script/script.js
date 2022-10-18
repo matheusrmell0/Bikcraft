@@ -21,7 +21,9 @@ function ativarProduto(param) {
 //
 
 // PERGUNTAS ATIVO/INATIVO
-const perguntas_button = document.querySelectorAll(".lista-de-perguntas button");
+const perguntas_button = document.querySelectorAll(
+  ".lista-de-perguntas button"
+);
 perguntas_button.forEach(eventosPerguntas);
 
 function eventosPerguntas(perg) {
@@ -40,7 +42,9 @@ function ativarPergunta(event) {
 //
 
 // GALERIA BICICLETAS
-const bicicletas = Array.from(document.querySelectorAll(".bicicletas-imagens img"));
+const bicicletas = Array.from(
+  document.querySelectorAll(".bicicletas-imagens img")
+);
 const bicicletas_div = document.querySelector(".bicicletas-imagens");
 bicicletas.forEach(mudarPrincipal);
 
@@ -58,7 +62,9 @@ function mudarImagem(event) {
 //
 
 // ANIMAÇÃO (PLUGIN)
-if(window.SimpleAnime){
-new SimpleAnime();
+if (window.SimpleAnime) {
+  new SimpleAnime();
 }
 //
+
+
