@@ -85,12 +85,10 @@ if (document.getElementById("index")) {
     timeStampDescription = timeSince;
     const refresh = timeStampDescription;
     if (refresh > 5) {
-      bikelist_ul.classList.add("opacity-1");
+      document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (refresh > 10) {
-      document
-        .querySelector(".tecnologia-imagem")
-        .classList.add("opacity-1-left");
+      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
     }
     if (refresh > 15) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-right");
@@ -101,18 +99,13 @@ if (document.getElementById("index")) {
 
   // ANIMAÇÃO SCRIPT MANUAL
   window.addEventListener("scroll", scrolling);
-  const bikelist_ul = document.querySelector(".ul-bike");
-  const ouro_pag = document.getElementById("seguros-items-ouroid");
-  const prata_pag = document.getElementById("seguros-items-prataid");
-
+  
   function scrolling(event) {
     if (window.scrollY >= 150) {
-      bikelist_ul.classList.add("opacity-1");
+      document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (window.scrollY >= 1000) {
-      document
-        .querySelector(".tecnologia-imagem")
-        .classList.add("opacity-1-left");
+      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
     }
     if (window.scrollY >= 1950) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-s");
@@ -130,6 +123,9 @@ if (document.getElementById("index")) {
         document.getElementById("seguros-index").classList.remove('opacity-0');
         document.getElementById("seguros-items-prataid").classList.remove('opacity-0');
         document.getElementById("seguros-items-ouroid").classList.remove('opacity-0');
+        document.querySelector(".parceiros h2").classList.remove('opacity-0');
+        document.querySelector(".tecnologia-imagem").classList.remove('opacity-0');
+        document.querySelector(".ul-bike").classList.remove('opacity-0');
       }
   }
 
@@ -137,12 +133,10 @@ if (document.getElementById("index")) {
   window.addEventListener("keypress", att);
   function att(event) {
     if (event.timeStamp >= 3000) {
-      bikelist_ul.classList.add("opacity-1");
+      document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (event.timeStamp >= 6000) {
-      document
-        .querySelector(".tecnologia-imagem")
-        .classList.add("opacity-1-left");
+      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
     }
     if (event.timeStamp >= 10000) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-right");
