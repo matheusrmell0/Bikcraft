@@ -54,9 +54,14 @@ function mudarPrincipal(imagem) {
 function mudarImagem(event) {
   const img_target = event.currentTarget;
   const media = matchMedia("(min-width: 920px)").matches;
+  const media_xr = matchMedia("(max-width: 800px)").matches;
   if (media) {
     bicicletas_div.prepend(img_target);
   }
+  if (media_xr) {
+    bicicletas_div.prepend(img_target);
+  }
+
 }
 //
 

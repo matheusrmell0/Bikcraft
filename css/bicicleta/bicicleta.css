@@ -129,6 +129,12 @@
     min-width: 100px;
   }
 }
+@media (max-width: 600px) {
+  #escolha-a-sua{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 @media (max-width: 400px) {
   .bicicleta-infomacoes {
     grid-template-columns: 1fr;
