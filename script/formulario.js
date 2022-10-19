@@ -1,3 +1,5 @@
+document.querySelector("form").setAttribute("action", "./enviar.php");
+
 const form = document.querySelector("form");
 function enviarForm(event) {
   event.preventDefault();
