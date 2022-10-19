@@ -61,7 +61,6 @@ function mudarImagem(event) {
   if (media_xr) {
     bicicletas_div.prepend(img_target);
   }
-
 }
 //
 
@@ -93,7 +92,9 @@ if (document.getElementById("index")) {
       document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (refresh > 10) {
-      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
+      document
+        .querySelector(".tecnologia-imagem")
+        .classList.add("opacity-1-left");
     }
     if (refresh > 15) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-right");
@@ -104,34 +105,46 @@ if (document.getElementById("index")) {
 
   // ANIMAÇÃO SCRIPT MANUAL
   window.addEventListener("scroll", scrolling);
-  
+
   function scrolling(event) {
     if (window.scrollY >= 150) {
       document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (window.scrollY >= 1000) {
-      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
+      document
+        .querySelector(".tecnologia-imagem")
+        .classList.add("opacity-1-left");
     }
     if (window.scrollY >= 1950) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-s");
     }
-      if (window.scrollY >= 3325) {
-        document.getElementById("seguros-items-prataid").classList.add("opacity-1-s");
-      }
-      if (window.scrollY >= 3325) {
-        document.getElementById("seguros-items-ouroid").classList.add("opacity-1-s");
-      }
-      if (window.scrollY >= 3066) {
-        document.getElementById("seguros-index").classList.add("opacity-1-s");
-      }
-      if (matchMedia("(max-width: 1250px)").matches){
-        document.getElementById("seguros-index").classList.remove('opacity-0');
-        document.getElementById("seguros-items-prataid").classList.remove('opacity-0');
-        document.getElementById("seguros-items-ouroid").classList.remove('opacity-0');
-        document.querySelector(".parceiros h2").classList.remove('opacity-0');
-        document.querySelector(".tecnologia-imagem").classList.remove('opacity-0');
-        document.querySelector(".ul-bike").classList.remove('opacity-0');
-      }
+    if (window.scrollY >= 3325) {
+      document
+        .getElementById("seguros-items-prataid")
+        .classList.add("opacity-1-s");
+    }
+    if (window.scrollY >= 3325) {
+      document
+        .getElementById("seguros-items-ouroid")
+        .classList.add("opacity-1-s");
+    }
+    if (window.scrollY >= 3066) {
+      document.getElementById("seguros-index").classList.add("opacity-1-s");
+    }
+    if (matchMedia("(max-width: 1250px)").matches) {
+      document.getElementById("seguros-index").classList.remove("opacity-0");
+      document
+        .getElementById("seguros-items-prataid")
+        .classList.remove("opacity-0");
+      document
+        .getElementById("seguros-items-ouroid")
+        .classList.remove("opacity-0");
+      document.querySelector(".parceiros h2").classList.remove("opacity-0");
+      document
+        .querySelector(".tecnologia-imagem")
+        .classList.remove("opacity-0");
+      document.querySelector(".ul-bike").classList.remove("opacity-0");
+    }
   }
 
   window.addEventListener("mousemove", att);
@@ -141,7 +154,9 @@ if (document.getElementById("index")) {
       document.querySelector(".ul-bike").classList.add("opacity-1");
     }
     if (event.timeStamp >= 6000) {
-      document.querySelector(".tecnologia-imagem").classList.add("opacity-1-left");
+      document
+        .querySelector(".tecnologia-imagem")
+        .classList.add("opacity-1-left");
     }
     if (event.timeStamp >= 10000) {
       document.querySelector(".parceiros h2").classList.add("opacity-1-right");
@@ -149,4 +164,4 @@ if (document.getElementById("index")) {
   }
 }
 //
-console.log('❤ ✔ By Mello 😃')
+console.log("❤ ✔ By Mello 😃");
