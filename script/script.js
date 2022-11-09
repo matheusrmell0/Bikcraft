@@ -47,6 +47,8 @@ const bicicletas = Array.from(
 const bicicletas_div = document.querySelector(".bicicletas-imagens");
 bicicletas.forEach(mudarPrincipal);
 
+const bicicletas_divAll = document.querySelectorAll(".bicicletas-imagens img");
+
 function mudarPrincipal(imagem) {
   imagem.addEventListener("click", mudarImagem);
 }
@@ -57,9 +59,13 @@ function mudarImagem(event) {
   const media_xr = matchMedia("(max-width: 800px)").matches;
   if (media) {
     bicicletas_div.prepend(img_target);
+    bicicletas_divAll.forEach((item)=>{item.classList.remove('smooth')});
+    img_target.classList.add("smooth");
   }
   if (media_xr) {
     bicicletas_div.prepend(img_target);
+    bicicletas_divAll.forEach((item)=>{item.classList.remove('smooth')});
+    img_target.classList.add("smooth");
   }
 }
 //
@@ -165,4 +171,3 @@ if (document.getElementById("index")) {
 }
 //
 console.log("❤ ✔ By Mello 😃");
-
